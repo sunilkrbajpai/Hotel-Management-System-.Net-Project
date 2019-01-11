@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css/AdminStyle.css" rel="stylesheet" type="text/css" />
+                <link rel="icon" href="../images/ggllogo.png" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="box">
+            <div id="header">
+                <div id="logo">
+                    <img src="../images/gglLogo.gif" width="150px" height="130px" />
+                </div>
+                <div id="banner">Clarks Awadh (Admin)</div>
+            </div>
+            <div id="menu">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <DynamicHoverStyle BackColor="White" ForeColor="#E0830C" />
+                    <DynamicMenuItemStyle BackColor="#E0830C" Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" HorizontalPadding="30px" VerticalPadding="10px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Admin/AdminHome.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Employee" Value="Employee">
+                            <asp:MenuItem NavigateUrl="~/Admin/NewEmployee.aspx" Text="Add New" Value="Add New"></asp:MenuItem>
+                            <asp:MenuItem Text="Get Details" Value="Get Details" NavigateUrl="~/Admin/GetEmployeeDetails.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Customer" Value="Customer" NavigateUrl="#">
+                            <asp:MenuItem NavigateUrl="~/Admin/CustomerManagement.aspx" Text="Customer Management" Value="Customer Management"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/BookingInfo.aspx" Text="Booking Management" Value="Booking Management"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Consumer Zone/GenerateBill.aspx" Text="Bill generation" Value="Bill generation"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Response Management" Value="Response Management" NavigateUrl="#">
+                            <asp:MenuItem NavigateUrl="~/Admin/EnquiryMgmt.aspx" Text="Enquiry Details" Value="Enquiry Details"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/FeedbackMgmt.aspx" Text="Feedback Details" Value="Feedback Details"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/LoginInfo.aspx" Text="Login info" Value="Login info"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Notification.aspx" Text=" Show Notification" Value="Show Notification"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Settings" Value="Settings" NavigateUrl="#">
+                            <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/Admin/ChangePassword.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Admin/Logout.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="White" ForeColor="#E0830C" />
+                    <StaticMenuItemStyle Font-Bold="True" Font-Size="X-Large" ForeColor="yellow" HorizontalPadding="35px" VerticalPadding="10px" />
+                </asp:Menu>
+            </div>
+            <div id="main">
+                <div id="heading">
+                    <asp:ContentPlaceHolder id="CPHHeading" runat="server">
+    </asp:ContentPlaceHolder>
+                    </div>
+                <div id="content">
+                    <asp:ContentPlaceHolder id="CPHcontent" runat="server">
+    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="fpart">
+                     Copyright &copy; to IET Lucknow
+                </div>
+                <div class="fpart">
+                    Made By: Sunil kumar bajpai
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
