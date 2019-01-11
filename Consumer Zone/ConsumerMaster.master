@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ConsumerMaster.master.cs" Inherits="Consumer_Zone_ConsumerMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../css/UserMaster.css" rel="stylesheet" type="text/css" />
+            <link rel="icon" href="../images/ggllogo.png" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="header">
+            <div id="logo">
+                <img src="../images/gglLogo.gif" height="120px" width="120px" />
+            </div>
+            <div id="sitetitle">Hotel Clarks Awadh</div>
+        </div>
+        <div id="menu">
+            <asp:Menu ID="Menu1" runat="server" Font-Bold="True" Font-Size="X-Large" Orientation="Horizontal" style="color: #6600FF">
+                <DynamicHoverStyle BackColor="#F97C0F" ForeColor="White"  />
+                <DynamicMenuItemStyle BackColor="White" ForeColor="#FF3399" HorizontalPadding="15px" VerticalPadding="10px" BorderColor="Green" BorderStyle="Outset" BorderWidth="1px" />
+                <DynamicSelectedStyle Font-Bold="True" Font-Size="Large" ForeColor="White" HorizontalPadding="30px" VerticalPadding="14px" />
+                <Items>
+                    <asp:MenuItem Text="Home" NavigateUrl="~/Consumer Zone/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Add" Value="Add" NavigateUrl="#">
+                        <asp:MenuItem NavigateUrl="~/ConReg.aspx" Text="Customer Detail" Value="Customer Detail"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Consumer Zone/roomdetail.aspx" Text="Room Detail" Value="Room Detail"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Check" Value="Check" NavigateUrl="~/Consumer Zone/checkroom.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Book room" Value="Book room" NavigateUrl="~/Consumer Zone/Booking.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Generate Bill" Value="Generate Bill" NavigateUrl="~/Consumer Zone/GenerateBill.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Setting" Value="Setting">
+                        <asp:MenuItem Text="My Profile" Value="My Profile" NavigateUrl="~/Consumer Zone/My Profile.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Change Password" Value="Change Password" NavigateUrl="~/Consumer Zone/Change Password.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Consumer Zone/Logout.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#CCFF66" ForeColor="#FF0066" />
+                <StaticMenuItemStyle Font-Size="X-Large" HorizontalPadding="40px" VerticalPadding="11px" ForeColor="White" />
+            </asp:Menu>
+        </div>
+        <div id="main"><div id="heading"><asp:ContentPlaceHolder id="CPHHeading" runat="server"> </asp:ContentPlaceHolder></div>
+            <asp:ContentPlaceHolder id="CPHMain" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        <div id="footer">
+            <div class="footerP">Copyright &copy; to IET Lucknow<br /></div>
+            <div class="footerP"><b>Made By: Sunil Kumar Bajpai <br /><br /></b><br /></div>
+        </div>
+        </div>
+     </form>
+</body>
+</html>
