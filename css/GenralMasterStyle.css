@@ -1,0 +1,71 @@
+﻿#container 
+{
+    margin:0px auto;
+    width:1000px;
+    height:950px;
+    padding-top:0px;
+}
+#header {
+    width:1000px;
+    height:130px;
+
+}
+#logo {
+    width:130px;
+    height:130px;
+    float:left;
+    background-color:white;
+}
+
+#sitetitle {
+    width:870px;
+    height:90px;
+    float:left;
+    font-size:70px;
+    font-weight:bold;
+    background-color:white;
+    text-align:center;
+    color:#f9b40d;
+    padding-top:40px;
+    text-shadow:1px 2px #000000;
+    font-family:'Bradley Hand ITC';
+}
+#menu 
+{
+    width:1000px;
+    height:50px;
+    background-color:#f97c0f;
+    color:yellow;
+}
+#slider {
+    width:1000px;
+    height:300px;
+    background-color:white;
+}
+#main{
+    height:auto;
+    width:1000px;
+    height:400px;
+    background-color:white;
+}
+#footer {
+    width:1000px;
+    height:120px;
+    background-color:#f97c0f;
+    color:white;
+}
+.footerpart {
+    width:40%;
+    height:80px;
+    float:left;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:8%;
+}
+    .footerpart a {
+        color:white;
+        text-decoration:none;
+        font-size:14px;
+        margin-right:15px;
+        border-radius:50%;
+    }

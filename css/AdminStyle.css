@@ -1,0 +1,67 @@
+﻿#box {
+width:1000px;
+height:1000px;
+margin:0px auto;
+}
+#header {
+width:1000px;
+height:130px;
+}
+#logo {
+width:150px;
+height:130px;
+float:left;
+}
+#banner {
+width:844px;
+text-align:center;
+height:105px;
+color:#e59914;
+float:left;
+font-size:60px;
+font-weight:bold;
+padding-top:25px;
+font-family:'Century Schoolbook';
+}
+#menu {
+width:995px;
+height:50px;
+background:#e0830c;
+}
+#main {
+width:1000px;
+height:768px;
+background:#f9e7b6;
+}
+#footer {
+width:1000px;
+height:80px;
+background-color:#e0830c;
+color:white;
+}
+.fpart {
+width:50%;
+float:left;
+padding-top:5px;
+height:80px;
+font-size:large;
+text-align:center;
+}
+#heading {
+width:90%;
+margin:10px auto;
+text-align:center;
+font-size:xx-large;
+border-radius:20px;
+color:white;
+font-family:'Bookman Old Style';
+background:#ee3110;
+height:45px;
+}
+#content {
+width:90%;
+margin:10px 0%;
+padding:15px 5%;
+border-radius:25px;
+font-size:23px;
+}

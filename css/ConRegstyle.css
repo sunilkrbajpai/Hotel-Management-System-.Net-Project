@@ -1,0 +1,39 @@
+﻿#regbox {
+    height:360px;
+    width:960px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:40px;
+    background-color:#ffd800;
+    border-radius:10px;
+}
+.box {
+    width:438px;
+    height:340px;
+    padding:20px;
+    float:left;
+    font-size:18px;
+    color:brown;
+    font-family:Verdana;
+    font-weight:bold;
+    font-style:normal;
+}
+#table1{
+    height:300px;
+    width:442px;
+    color:black;
+    font-family:Verdana;
+    font-weight:bold;
+    font-style:italic;
+}
+#table2{
+    height:300px;
+    width:442px;
+    color:black;
+    font-family:Verdana;
+    font-weight:bold;
+    font-style:italic;
+}
+input {
+    border-radius:10px 0px 10px 0px;
+}

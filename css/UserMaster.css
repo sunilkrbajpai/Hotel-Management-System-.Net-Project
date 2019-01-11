@@ -1,0 +1,75 @@
+﻿body {
+    background:#3afbad;
+}
+* {
+margin:0px;
+padding:0px;
+}
+#outer {
+    margin:0px auto;
+height:auto;
+width:1000px;
+background:white;
+}
+#header {
+height:120px;
+width:1000px;
+background-color:white;
+}
+#logo {
+height:120px;
+width:120px;
+float:left;
+background-color:white;
+}
+#sitetitle {
+height:100px;
+width:880px;
+float:left;
+font-size:70px;
+color:#f9b40d;
+padding-top:20px;
+text-align:center;
+text-shadow:1px 1px 1px black;
+font-family: 'Bradley Hand ITC';}
+#menu {
+height:50px;
+width:1000px;
+background:#f97c0f;
+margin-top:3px;
+margin-bottom:3px;
+}
+#main {
+height:auto;
+min-height:420px;
+width:1000px;
+
+}
+#footer {
+height:50px;
+width:1000px;
+background-color:#f97c0f;
+margin-top:3px;
+}
+.footerP {
+height:40px;
+width:500px;
+float:left;
+padding-top:10px;
+text-align:center;
+font-size:18px;
+color:white;
+}
+#heading {
+width:75%;
+height:45px;
+background-color:#f97c0f;
+color:white;
+border-radius:20px;
+padding:5px 10%;
+text-align:center;
+font-size:28px;
+font-family:Algerian;
+font-weight:bold;
+margin:2%;
+}

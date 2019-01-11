@@ -1,0 +1,36 @@
+﻿#box {
+    height:330px;
+    width:910px;
+    background-color:#f9b40d;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    padding:20px;
+}
+#Address {
+height:250px;
+width:380px;
+float:left;
+background:white;
+margin:10px;
+padding:30px 20px;
+font-size:22px;
+font-weight:bold;
+color:blue;
+border-radius:10px;
+}
+#map {
+    height:260px;
+    width:380px;
+    float:left;
+    background:white;
+    border-radius:10px;
+    margin:10px;
+    padding:25px;
+    font-size:20px;
+}
+h2 {
+    color:#821717;
+    text-shadow:2px 2px 2px black;
+}
