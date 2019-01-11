@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralMasterStyle.master.cs" Inherits="GeneralMasterStyle" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   
+  
+        <link rel="icon" href="images/ggllogo.png" />
+ 
+    
+    <script>
+        var img = 0;
+        var arr = ["1.jpg", "3.jpg", "5.jpg", "1.webp", "2.jpg", "3.webp", "4.webp", "6.jpg"];
+        function slider()
+        {
+            var images = document.getElementById("img1");
+            images.src = "images/hotelImges/" + arr[img];
+            img++;
+            if (img == arr.length)
+            {
+                img = 0;
+            }
+            window.setTimeout("slider()", 2500);
+        }
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="GenralMasterStyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/GenralMasterStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="slider()" style="background-color:#c0e42e">
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <div id="logo">
+                    <img src="images/gglLogo.gif" width="130" height="130" />
+                </div>
+                <div id="sitetitle">
+         Hotel Clarks Awadh
+
+                </div>
+                </div>
+            <div id="menu">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                    <DynamicHoverStyle Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" BackColor="#33CC33" />
+                    <DynamicMenuItemStyle Font-Bold="True" ForeColor="Yellow" ItemSpacing="15px" BackColor="#339933" Font-Size="X-Large" HorizontalPadding="25px" VerticalPadding="10px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="HOME" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/aboutus.aspx" Text="About" Value="About"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/Enquiry.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Login" Value="Login" NavigateUrl="~/login.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Admin" Value="Admin" NavigateUrl="~/Admin/AdminLogin.aspx"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="White" ForeColor="#6600FF" />
+                    <StaticMenuItemStyle Font-Bold="True" Font-Size="X-Large" ForeColor="Yellow" HorizontalPadding="40px" VerticalPadding="10px" />
+                    <StaticSelectedStyle Font-Size="X-Large" />
+                </asp:Menu>
+                </div>
+            <div id="slider">
+                <img id="img1" width="1000px" height="300px"/>
+            </div>
+            <div id="main">
+                <asp:ContentPlaceHolder ID="CPHMain" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <div id="lfooter" class="footerpart">
+                    <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" height="50" width="50" style="border-radius:30px;margin-top:20px"/></a>
+                     <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.png" height="50" width="50" style="border-radius:30px;margin-top:20px"/></a>
+                     <a href="http://www.youtube.com" target="_blank"><img src="images/youtube.png" height="50" width="50" style="border-radius:30px;margin-top:20px"/></a>
+                     <a href="http://www.yahoo.com" target="_blank"><img src="images/yahoo.png" height="50" width="50" style="border-radius:30px;margin-top:20px"/></a>
+                    <a href="http://www.gmail.com" target="_blank"><img src="images/gmail.png" height="50" width="50" style="border-radius:30px;margin-top:20px"/></a><br/><br/>
+                    
+                </div>
+                <div id="rfooter" class="footerpart">
+                <div style="width:70%;float:left";>
+                   
+                       <b><u> Made By:<br />
+                           Sunil Kumar Bajpai</b></u>:<br /><br /><br />
+                                  
+          
+                   <center style="color :White"> Copyright &copy; <a href="http://www.ietlucknow.ac.in" style="color :greenyellow">IET Lucknow</a></center>
+                </div>
+                <div style="width:30%;float:left">
+                    <img src="images/group.jpg" alt="group" width="100" height="100" style="border:1px solid blue;border-radius:55px" />
+                </div>
+            </div>
+                </div>
+    </div>
+    </form>
+</body>
+</html>
